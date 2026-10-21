@@ -104,7 +104,7 @@ Checkstyle is a static code analysis tool used in software development for check
 <details>
   <summary><em><ins>Click here to explore Checkstyle implementation.</ins></em></summary><br>
 
-Below config snippet is configured in the [build.gradle](../build.gradle) to include checkstyle.
+The following is an example Checkstyle setup for Gradle; the current repository [build.gradle](../build.gradle) does not apply the Checkstyle plugin.
 
 ```bash
 plugins {
@@ -124,7 +124,7 @@ tasks.withType(Checkstyle) {
 
 and checkstyle [config at this location](../config/checkstyle).
 
-Execute below command to perform static code analysis.
+The command below runs this repository's configured Gradle checks; it does not run Checkstyle unless the plugin is applied.
 
 ```bash
 ./gradlew check
@@ -157,7 +157,7 @@ plugins{
   id 'jacoco'
 }
 ext{
-  jacocoVersion = "0.8.5"
+  jacocoVersion = "0.8.9"
 }
 // Jacoco for Code Coverage
 jacoco {
@@ -206,7 +206,7 @@ jacocoTestCoverageVerification {
 Execute below commands to generate and test code coverage(jacoco tasks depends on test task).
 
 ```bash
-./gradlew test -Pexcludee2e=**/true*
+./gradlew test -Pexcludee2e=true
 ./gradlew jacocoTestReport
 ./gradlew jacocoTestCoverageVerification
 ```
