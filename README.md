@@ -7,7 +7,7 @@
 - [Introduction](#introduction)
 - [Built With](#built-with)
 - [Prerequisites](#prerequisites)
-- [Installation and Getting Started](#installation-and-Getting-Started)
+- [Installation and Getting Started](#installation-and-getting-started)
 - [Microservice Structure](#microservice-structure)
 - [Development Practice](#development-practice)
 - [Integrations](#integrations)
